@@ -1,0 +1,271 @@
+Q1 program to print vowel letter in two times in string
+ Enter string: welcome
+ output:weelcoomee
+====================================================================
+#include<stdio.h>
+main()
+{
+    int i;
+    char str[50];
+    printf("Enter string:");
+    gets(str);
+     i=0;
+    while(str[i])
+    {
+      if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u')
+       printf("%c%c", str[i],str[i]);
+      else
+       printf("%c",str[i]);
+       i++;
+    }
+}
+--------------------
+output
+-----------------
+Enter string:welcome
+weelcoomee
+=========================================================================
+Q2 program to print space in place of vowel character in string
+Enter string:welcome
+ output:w lc m 
+=========================================================================
+#include<stdio.h>
+main()
+{
+    int i;
+    char str[50];
+    printf("Enter string:");
+    gets(str);
+     i=0;
+    while(str[i])
+    {
+      if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u')
+       printf(" ");
+      else
+       printf("%c",str[i]);
+       i++;
+    }
+}
+--------------------------
+output
+--------------------------
+Enter string:welcome
+w lc m
+===========================================================================
+Q3 program to print all consonant in capital form.
+Enter string:welcome
+output:WeLCoMe
+============================================================================
+#include<stdio.h>
+main()
+{
+    int i;
+    char str[50];
+    printf("Enter string:");
+    gets(str);
+     i=0;
+    while(str[i])
+    {
+      if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u')
+       printf("%c", str[i]);
+      else
+       printf("%c",str[i]-32);
+       i++;
+    }
+}
+-------------
+output
+-------------
+Enter string:welcome
+WeLCoMe
+==============================================================================
+Q4 program to print half of the string[length=>5or6 upto 3 letter].
+Enter String:welcome
+output:welc
+==============================================================================
+#include<stdio.h>
+main()
+{
+   int i,c=0;
+   char str[50];
+   printf("Enter a string:");
+   gets(str);
+   for(i=0;str[i];i++)
+   {
+    c++;
+   }
+   int n1=c;
+   for(i=0;i<=n1/2;i++)
+   {
+    printf("%c",str[i]);
+   }
+
+}
+-------------
+output
+-------------
+Enter a string:welcome
+welc
+==============================================================================
+Q5 program to count vowel in the input string.
+ Enter string:welcome
+ vowel=3
+==============================================================================
+#include<stdio.h>
+main()
+{
+    int i,c=0;
+    char str[50];
+    printf("Enter string:");
+    gets(str);
+     i=0;
+
+    while(str[i])
+    {
+      if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u')
+        c++;
+       i++;
+
+    }
+     printf("vowel=%d",c);
+}
+----------------------------
+output
+---------------------------
+Enter string:welcome
+vowel=3
+==========================================================================================
+Q6 program to count consonant in the input string.
+Enter string:welcome
+ consonant=4
+==========================================================================================
+#include<stdio.h>
+main()
+{
+    int i,c=0,j=0;
+    char str[50];
+    printf("Enter string:");
+    gets(str);
+     i=0;
+
+    while(str[i])
+    {
+      if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u')
+        c++;
+        else
+            j++;
+       i++;
+
+    }
+     printf("vowel=%d",c);
+     printf("\nconsonant=%d",j);
+}
+-----------
+output
+----------
+Enter string:welcome
+vowel=3
+consonant=4
+==================================================================================
+Q7 program to count number of space in sentences.
+  Enter sentence: This is c programming
+  spaces: 3
+===================================================================================
+#include<stdio.h>
+main()
+{
+    int i,c=0;
+    char str[50];
+    printf("Enter sentence:");
+    gets(str);
+     i=0;
+    while(str[i])
+    {
+      if(str[i]==' ')
+       c++;
+       i++;
+    }
+    printf("space=%d",c);
+}
+--------------
+output-
+--------------
+Enter sentence:this is c programing
+space=3
+==============================================================================
+Q8 program to accept string and print
+ Enter string:welcome
+ output:w7e6l5c4o3m2e1
+===============================================================================
+#include<stdio.h>
+main()
+{
+   int i,c=1;
+   char str[50];
+   printf("Enter a string:");
+   gets(str);
+   for(i=0;str[i];i++)
+       {
+          c++;
+       }
+       int n1=c;
+    for(i=0;str[i];i++){
+      n1--;
+      printf("%c%d",str[i],n1);
+
+      }
+}
+-----------------
+output
+----------------
+Enter a string:welcome
+w7e6l5c4o3m2e1
+=============================================================================
+Q9 program to accept string and print
+ Enter string:welcome
+ output:w*e*l*c*o*m*e*
+=============================================================================
+#include<stdio.h>
+main()
+{
+   int i;
+   char str[50];
+   printf("Enter a sentence:");
+   gets(str);
+   for(i=0;str[i];i++)
+   printf("%c%c",str[i],'*');
+}
+--------------
+output
+--------------
+Enter a sentence:welcome
+w*e*l*c*o*m*e*
+==============================================================================
+Q10 program to separate symbol from the string
+ Enter string:hhe$r2#bc~dg&h
+ output:$#~&
+===============================================================================
+#include<stdio.h>
+main()
+{
+   int i,c=1;
+   char str[50]=":hhe$r2#bc~dg&h";
+    for(i=0;str[i];i++){
+            if(str[i]=='$'||str[i]=='#'||str[i]=='~'||str[i]=='&')
+      printf("%c",str[i]);
+
+      }
+}
+--------------
+output
+--------------
+$#~&
+=================================================================================
+
+
+
+
+
+
+
+

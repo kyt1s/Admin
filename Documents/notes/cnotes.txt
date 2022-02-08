@@ -1,0 +1,2984 @@
+
+c Assignment 3  https://forms.gle/BoCDfg2QfyGTC7349
+
+C Assignment 3 https://forms.gle/R8gMzGiMHNddmF6g7
+
+
+
+
+
+array Assignment https://forms.gle/RBkwrPDH34UCYYTEA
+
+ Complete C online Quiz 1[Control statement and operator].
+https://forms.gle/ko3jkRjCD47fWFcDA
+Dear Students
+ Complete C online Quiz 2[operator and precedence].
+
+https://forms.gle/AqEc3dmRYvqJuPbg6
+Dear Students
+ Complete C online Quiz 1[Control statement and operator].
+https://forms.gle/ko3jkRjCD47fWFcDA
+Dear Students
+ Complete C online Quiz 2[operator and precedence].
+
+https://forms.gle/AqEc3dmRYvqJuPbg6
+Dear Students
+ Complete C online Quiz 3[Loop & control statement].
+https://forms.gle/G6PD9CtasVgQaigNA
+
+Assignment date: 6 May 2020
+Find the answer with reason.
+1. putchar('B'+1);
+2. putchar('a'+3);
+3. putchar('B'+1-2);
+4. putchar('C'-2);
+5. putchar('\n');
+6. putchar('9'-1);
+7. putchar('3'+2);
+8. putchar('17'-1);
+9. putchar('18'+1);
+10. printf("%d",printf("2"));
+11. printf("%d",putchar('A'));
+12. printf("%d",'\n');
+13. printf("%d",strlen("0"));
+14. printf("%d",strlen("567"));
+15. printf("%d",strlen("444")+1);
+16. printf("%d",strlen("4444")-1);
+17. printf("%d",strcmpi("44","444"));
+18. printf("%d",strcmp("abc","abc"));
+19. printf("%d",strcmp("D","B")) ;
+20. printf("%d",strcmp("A",'a'));
+21. printf("%d",strcmp("A","65"));
+22. char str[]="program";
+    printf("%d",sizeof(str));
+23. char str[]="program";
+    strupr(str);
+    printf("%s",str);
+24. char str[]="WELCO…
+Function
+=========
+A function is a block of code that performs a specific task.
+Dividing a complex problem into smaller chunks makes
+ our program easy to understand and reuse.
+
+Advantages of user-defined function
+----------------------------------------
+The program will be easier to understand, maintain and debug.
+Reusable codes that can be used in other programs
+A large program can be divided into smaller modules. 
+Hence, a large project can be divided among many programmers.
+Function Assignment
+====================
+Q1. Program to print personal details(name,regno,branch,addr) using userdefined function showdet()
+Q2. Program to print subject details of current semester using function showsub()
+Q3. Program to print sum of two integer using function sumint()
+Q4. Program to print sum of two float using function sumfloat()
+Q5. Program to print number line of 5 using function nline()
+Q6. Program to print natural numbers with upper limit using function natseries()
+Q7. program to find simple interest using function calinterest()
+Q8. program to find area and circumference of circle using function circle()
+Q9. program to find odd series with lower and upper limit use function oseries()
+Q10. Program to print following series using function…
+
+Function Assignment
+========================
+q1. Program to find sum of four integers using function.
+     void sumfour(int,int,int,int)
+q2. program to find area of rectangle using function.
+     void calarea(float,float)
+q3. program to convert capital letter to small letter
+     void convert(char);
+q4. program to print even series upto limit using function.
+     void evenseries(int)
+q5. program to calculate factorial using function.
+     void calfactorial(int)
+q6. program to print step series using function.
+     void stepseries(int, int) //series limit, steps
+      stepseries(10,2)       //function call
+      output: 1 3 5 7 9
+q7. program to calculate simple interest using function.
+     void calinterest(int,float,float)
+q8. program to swap two integers us…
+
+Define the following
+====================
+1. Function
+2. predefined function
+3. userdefined function
+4. prototype
+5. Function definition
+6. argument
+7. return type
+8. Actual argument
+9. formal argument
+10. Function categories
+11. Function Header
+Sir bole h
+
+#include<stdio.h>
+//step series
+void calfactorial(int);
+int main()
+{
+   int n;
+   printf("Enter number for factorial");
+   scanf("%d",&n);
+   calfactorial(n);
+   return 0;
+}
+void calfactorial(int n)
+{
+     int i,f=1;
+     for(i=1;i<=n;i++)
+         f=f*i;
+     printf("Factorial =%d",f);
+}
+Actual argument: The argument is used in 
+ function call.
+ Actual argument have actual value.
+
+Formal argument: The argument is used in 
+  function header.
+  
+   void sum(int,int);   //prototype
+   int main()
+    {
+        int n1,n2;
+        n1=10;
+        n2=20;
+        sum(n1,n2);  //function call
+       return 0;
+    }
+  n1 and n2 is actual argument
+
+void sum(int num1,int num2) //function header
+{
+
+}
+num1 and num2 is formal argment
+
+Function categories
+======================
+1 No argument and no return type
+2 argument and no return type
+3 argument and return type
+4 no argument but return value
+Q1. program to find multiplication of two numbers using function.
+  int multi(int,int)
+q2. program to find average of three numbers using function.
+   float average(int,int,int)
+q3. program to find simple interest and amount using function
+    void calinterest(int,float,float)
+q4. program to print table of any number using function.
+    void ptable(int)
+q5. program to check input is vowel or not use function.
+    void checkv(char)
+q6. program to find sum of odd number in range use function.
+     int sumrange(int,int)
+q7. program to print series in ascending and descending order using function.
+    void series(int)
+q8. program to print even and odd series separately use function.
+    void pseries(int)
+     pseries(10)
+     output:
+      1 3 5 7 9
+      2 4 6 8
+#include<stdio.h>
+void pseries(int);
+int main(void)
+{
+  int n;
+  printf("Enter upper limit for series:");
+  scanf("%d",&n);
+  pseries(n);
+  return 0;
+}
+void pseries(int n)
+{
+   int i;
+   for(i=1;i<=n;i++)
+    if(i%2!=0)
+      printf("%d ",i);
+    printf("\n");
+   for(i=1;i<=n;i++)
+    if(i%2==0)
+      printf("%d ",i);
+}
+#include<stdio.h>
+void series(int);
+int main()
+{
+   int n;
+   printf("Enter upper limit for series:");
+   scanf("%d",&n);
+   series(n);
+   return 0;
+}
+void series(int n)
+{
+   int i;
+    printf("Ascending series\n");
+    for(i=1;i<=n;i++)
+     printf("%d ",i);
+    printf("\nDescending series\n");
+    for(i=n;i>=1;i--)
+     printf("%d ",i);
+
+}
+1. program to find sum of three numbers using function.
+   int sum()
+2. program to find circuference of circle using function.
+   float circum()
+3. program to find area of triangle using function.
+   float tarea()
+4. program to find factor of number using function.
+    void factor(int)
+5. program to find sum of 1 to 10 using function.
+   int sum()
+6. program to print small alphabets using function.
+    void salpha()
+7. program to swap two float numbers using function.
+   void fswap(float,float)
+8. program to print alphabet series using function.
+   void aseries()
+    a b c ..... z
+    A B C ......Z
+1. program to find sum of three numbers using function.
+   int sum()
+2. program to find circuference of circle using function.
+   float circum()
+3. program to find area of triangle using function.
+   float tarea()
+4. program to find factor of number using function.
+    void factor(int)
+5. program to find sum of 1 to 10 using function.
+   int sum()
+6. program to print small alphabets using function.
+    void salpha()
+7. program to swap two float numbers using function.
+   void fswap(float,float)
+8. program to print alphabet series using function.
+   void aseries()
+    a b c ..... z
+    A B C ......Z
+
+Parameter Passing
+===================
+It is technique to pass argument to function definition.
+Function call statement is passed value to function definition.
+There are two techniques to pass argument to function definition.
+1. pass by value  or call by value
+2. pass by address or call by address  [ in pointer]
+1. pass by value: In this technique function call pass copy of 
+  actual argument to function definition.
+  If any change in function definition does not reflected to 
+  calling function(main).
+Function Assignment
+==============================
+No argument and No return type
+================================
+1. program to print name, mobile and address 3 times
+   void printd()
+2. program to print message according to user input.
+    void printm()
+    Enter message: Hello
+    Repeatation:5
+    output: Hello Hello Hello Hello Hello
+3. program to swap two characters using function.
+    void swap()
+4. program to check number is even or odd use function.
+    void checknum()
+5. program to calculate Dollor to Rupees using function.
+    void conRS()
+6. program to print all even number in reverse form.
+   void reveven()
+    Enter number: 10    output=>10 8 6 4 2 0
+Argument and no return type
+============================
+1. program to find sum and multiplicat…
+#include<stdio.h>
+int checkprime(int);        //prototype    Global declaration
+int main()
+{
+    int n,r;
+    printf("Enter value");
+    scanf("%d",&n);
+    r=checkprime(n);         //function call
+    if(r==1)
+        printf("Prime number");
+    else
+        printf("not prime number");
+
+  return 0;
+}
+
+  int checkprime(int n)     //function definition
+   {
+       int i,c=0;
+       for(i=1;i<=n;i++)
+        {
+            if(n%i==0)
+                c++;
+        }
+        if(c>2)
+            return 0;
+        else
+            return 1;
+}
+#include<stdio.h>
+void printm();
+int main()
+{
+    printm();
+     return 0;
+}
+void printm()
+{
+     int n,i;
+     char msg[30];
+     printf("Enter Message: ");
+     gets(msg);
+     printf("Enter Repeatation ");
+     scanf("%d",&n);
+     for(i=1;i<=n;i++)
+       printf("\n%s",msg);
+}
+#include<stdio.h>
+void reveven();
+int main()
+{
+    reveven();
+     return 0;
+}
+void reveven()
+{
+     int n,i;
+     printf("Enter Upper Limit: ");
+     scanf("%d",&n);
+     for(i=n;i>=1;i--)
+         if(i%2==0)
+           printf(" %d ",i);
+}
+#include<stdio.h>
+int checkperfact(int);
+int main()
+{
+    int r,n;
+    printf("Enter number to check perfact:");
+    scanf("%d",&n);
+    r=checkperfact(n);
+    if(r==1)
+        printf("Perfact number");
+    else if(r==0)
+         printf("Not Perfact Number");
+     return 0;
+}
+int checkperfact(int n)
+{
+     int i,s=0;
+     for(i=1;i<n;i++)
+      {
+            if(n%i==0)
+              s=s+i;
+      }
+     return (s==n)? 1:0;
+}
+#include<stdio.h>
+int revnum();
+int main()
+{
+    int r,n;
+    r=revnum();
+    printf("Reverse number=%d",r);
+     return 0;
+}
+int revnum()
+{
+     int i,rev=0,dig,n;
+     printf("Enter number");
+     scanf("%d",&n);
+     for(i=n;i!=0;i=i/10)
+      {
+            dig=i%10;
+            rev=rev*10+dig;
+      }
+     return rev;
+}
+#include<stdio.h>
+void snum(int,int);
+int main()
+{
+    int l,u;
+     printf("Enter lower and upper limits: ");
+      scanf("%d%d",&l,&u);
+     snum(l,u);
+     return 0;
+}
+void snum(int l,int u)
+{
+    int s=0;
+    while(l<=u)
+    {
+        s=s+l;
+        printf(" %d ",l);
+        l=l+2;
+    }
+    printf("\nSum of alternate numbers=%d",s);
+}
+#include<stdio.h>
+int checksmall();
+int main()
+{
+    int r;
+    r=checksmall();
+    printf("Smallest number=%d",r);
+     return 0;
+}
+int checksmall()
+{
+     int i,small,num[10];
+     printf("Enter 10 numbers: ");
+     for(i=0;i<10;i++)
+          scanf("%d",&num[i]);
+     small=num[0];
+     for(i=1;i<10;i++)
+      {
+            if(num[i]<small)
+                small=num[i];
+      }
+     return small;
+}
+Complete a) b) c) d) e)
+Pattern Printing using function.
+==========================
+#include<stdio.h>
+void showp(int);
+int main()
+{
+     int i;
+   for(i=5;i>=1;i--)
+    showp(i);
+  return 0;
+}
+void showp(int n)
+{
+   int i;
+    printf("\n");
+    for(i=1;i<=n;i++)
+     printf("%d ",i);
+}
+
+a) 
+5 4 3 2 1
+4 3 2 1
+3 2 1
+2 1
+1
+b)
+5 5 5 5 5
+4 4 4 4
+3 3 3
+2 2
+1
+c)
+5 4 3 2 1
+1 2 3 4
+3 2 1
+1 2
+1
+d)
+1 2 3 4 5
+5 4 3 2 1
+1 2 3 4 5
+5 4 3 2 1
+e)
+1 1 1
+2 2 2
+3 3 3
+4 4 4
+
+Pattern using function.
+==========================
+#include<stdio.h>
+void showp(char);
+int main()
+{
+   showp('A');
+    return 0;
+}
+void showp(char c)
+{
+    int i;
+    for(i=0;i<5;i++)
+        printf(" %c ",c+i);
+    printf("\n");
+    for(i=i-1;i>=0;i--)
+        printf(" %c ",c+5+i);
+}
+solve
+==========
+a) void showa(char)
+A B C D E
+j i h g f
+b) void showalpha()
+A z B y C.........a Z
+c) void show(char,char)
+A a B b...........Z z
+d) void shownum(int)
+ 1 2 3 4 5
+ 5 4 3 2 1
+ 1 2 3 4
+ 4 3 2 1
+ 1 2 3
+ 3 2 1
+ 1 2
+ 2 1
+ 1
+ 1
+e) void showpt(int)
+1 2 3 4 5
+* * * * *
+1 2 3 4
+* * * *
+1 2 3
+* * *
+1 2
+* *
+1
+*
+Array as a parameter
+=======================
+User defined function pass
+array as a argument/parameter.
+Function pass all types of array.
+In case of any changes in array element
+that is also reflected in calling function.
+Array name always respresent base address.
+
+prototype:
+==========
+  1 void show(int[]);
+ This function is going to pass array with
+  unlimited size. 
+  2 void show(int);
+ This function is going to pass one integer.
+  3 void show();
+This function does not pass any argument
+  4 void show(int [5]);
+This function pass integer array with size 5
+
+Function call
+=============
+In case of array argument, function pass
+ only name of array. Array name represents
+starting address(base address) of array.
+
+   show(arr);    =>1,4
+   show(arr[0]);  =>2
+
+Func…
+Function Assignment[function and array]
+=======================================
+1. program to find the sum of integer array.
+   void sumarr(int [])
+2. program to print even element in 1d array.
+    void evenele(int[])
+3. program to print odd element in 1d array.
+    void oddele(int[])
+4. program to print array element in reverse order.
+    void revele(int[])
+5. program to find smallest element in 1d array.
+    int smallele(int [])
+6. program to find biggest element in 1d array.
+    int bigele(int [])
+7. program to print second highest element in 1d array.
+    int secdele(int[])
+8. program to print content of float array.
+    void floatarr(float[])
+9. program to print content of char array.
+    void chararr(char[])
+10. program to print contents int and char array.
+     void printarr(int[],char[])
+Join kro sir a gaye hai
+#include<stdio.h>
+void showstr(char[]);    //prototype
+int main()
+{
+    char str[50];
+    printf("Enter String:");
+    gets(str);
+    showstr(str);       //function call
+    return 0;
+}
+void showstr(char st[])   //function definition
+{
+    int i,c=0,v=0;
+     for(i=0;st[i];i++)
+     {
+         if(st[i]=='a'||st[i]=='e'||st[i]=='i'||st[i]=='o'||st[i]=='u')
+         {
+             v++;
+               printf("  %c %d\n",st[i],v);
+         }
+                else{
+                    c++;
+                printf("%c %d\n",st[i],c);
+
+                }
+
+     }
+}
+
+Function and String Assignment
+==============================
+Q1. Program to print each character of string in separate line.
+  void printchar(char[])
+Q2. program to print string in reverse order.
+   void reversestr(char[])
+Q3. program to print vowel character of the string.
+    void printvowel(char[])
+Q4. program to print consonent character of the string.
+    void printcons(char[])
+Q5. program to print length of the string.
+    int calstrlen(char[])
+Q6. program to count vowel and consonent separately from the string.
+    int calstr(char[])
+Q7. program to convert string in capital form.
+    void constr(char[])
+Q8. program to convert string in small letter form.
+     void small(char[])
+Q9. program to convert string in reverse[capital/small] form.
+    void co…
+
+#include<stdio.h>
+void palindrome(char []);  //prototype
+int main()
+{
+  char str[20];
+   printf("Enter String :");
+   gets(str);
+   palindrome(str);       //function call
+  return 0;
+}
+void palindrome(char st[])   //function definition
+{
+   int i,j=0,r=1;
+   char rst[20];
+   for(i=0;st[i];i++);
+   i--;
+   while(i>=0)
+   {
+       rst[j]=st[i];
+       j++;
+       i--;
+   }
+   rst[j]='\0';
+   for(i=0;st[i];i++)
+   {
+       if(st[i]==rst[i])
+         r=0;
+       else
+       {r=1; break;}
+   }
+    if(r==0)
+        printf("palindrome");
+    else
+        printf("Not palindrome");
+}
+#include<stdio.h>
+void show(int []);
+int main()
+{
+  int i, num[5]={11,22,33,44,55};
+  show(num);
+  printf("After function call\n");
+  for(i=0;i<5;i++)
+    printf(" %d ",num[i]);
+  return 0;
+}
+void show(int n[])
+{
+   int i;
+   for(i=0;i<5;i++)
+    n[i]=n[i]+10;
+}
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+  char str[20],rstr[20];
+  int r;
+  printf("Enter string to check palidrome:");
+  gets(str);
+  strcpy(rstr,str);
+  strrev(rstr);
+  r=strcmpi(rstr,str);
+  if(r==0)
+    printf("Palindrome");
+  else
+    printf("Not Palindrome");
+
+  return 0;
+}
+
+Function and String Assignment
+Q1 Program to print alternate character of the string.
+    void pstring(char [])
+    Enter string: welcome
+     output: wloe
+Q2. Program to print alternate character of the string in capital.
+    void astring(char[])
+    Enter string: welcome
+     output: WeLcOmE
+Q3. program to print each character with space.
+     void pstring(char[])
+     Enter String:trident
+     output: t r i d e n t
+Q4. program to print string in following format.
+     void formated(char[])
+      Enter String: Trident
+       output: T*r*i*d*e*n*t
+Q5. program to print string in following format.
+      void forstring(char[],int)
+      Enter String: Trident 2
+      output:T--r--i--d--e--n--t
+Q6. Program to print string in mirror print.
+     void mirror(char[]…
+Function assignment
+=====================
+Q1 Program to print name in three format
+    void printn(char[])
+    Enter name: ramesh
+    Ramesh
+    hsemaR
+    RAMESH
+Q2. program to print each character of string with ASCII code
+     void printa(char[])
+    Enter name: Abcd
+    output: A65b98c99d100
+Q3. program to count consonant and vowel in given string.
+     int printd(char[])
+     Enter String: Trident
+     output: vowel-2
+             consonant-7
+Q4. program to print string according number of letters in string.
+    void printc(char[])
+    Enter string:tat
+    output 
+     tat
+     tat
+     tat
+Q5. program to count number of element in array.
+     void counte(int[])
+     Enter 10 elements: 11 22 11 10 9 22 33 11 44 55
+     Enter element to count: 11
+     ou…
+#include<stdio.h>
+#include<string.h>
+void unique(int[]);
+int main()
+{
+    int num[5],i;
+    printf("Enter 10 Elements:");
+     for(i=0;i<5;i++)
+      scanf("%d",&num[i]);
+
+    unique(num);
+    return 0;
+}
+void unique(int nm[])
+{
+    int i,j,c=0;
+     for(i=0;i<5;i++)
+     {
+       for(j=0;j<5;j++)
+             if(nm[i]==nm[j])
+                c++;
+        if(c==1)
+         printf("%d ",nm[i]);
+       c=0;
+     }
+}
+#include<stdio.h>
+#include<string.h>
+void unique(int[]);
+int main()
+{
+    int num[5],i;
+    printf("Enter 5 Elements:");
+     for(i=0;i<5;i++)
+      scanf("%d",&num[i]);
+
+    unique(num);
+    return 0;
+}
+void unique(int nm[])
+{
+    int i,j,c=0 ,r[10];
+     for(i=0;i<5;i++)
+     {
+       for(j=0;j<5;j++)
+             if(nm[i]==nm[j])
+                c++;
+        if(c>1)
+         printf("%d ",nm[i]);
+       c=0;
+     }
+}
+#include<stdio.h>
+#include<string.h>
+void unique(int[]);
+void store(int);
+int r[10],k=0;  //global declaration
+int main()
+{
+    int num[10],i;
+    printf("Enter 10 Elements:");
+     for(i=0;i<10;i++)
+      scanf("%d",&num[i]);
+    unique(num);
+    return 0;
+}
+void unique(int nm[])
+{
+    int i,j,c=0 ;
+     for(i=0;i<10;i++)
+     {
+       for(j=0;j<10;j++)
+             if(nm[i]==nm[j])
+                c++;
+        if(c>1)
+           store(nm[i]);
+        c=0;
+     }
+     for(i=0;i<k;i++)
+        printf(" %d ",r[i]);
+}
+void store(int n)    //store repeated value in r[] array
+{
+    int i,f=0;
+    for(i=0;i<k;i++)
+    {
+         if(r[i]==n)
+         {f=1; break;}
+    }
+    if(f==0)
+        r[k++]=n;
+}
+Searching
+==========
+1. Linear Search
+2. Binary search
+Linear Search
+-------------
+Linear means in sequence.
+It is also called sequential search.
+Search an element in sequence.
+Searching start with first element.
+It is applicable sorted and unsorted list.
+It is slower than binary search.
+Number of iteration is more.
+             0  1  2  3 4  5  6  7  8  9
+    num[10]={11,20,10,9,88,22,66,76,13,17}
+    
+     se=76
+
+#include<stdio.h>
+int main()
+{
+    int num[5],i,se,f=0;
+    printf("Enter 5 elements:");
+     for(i=0;i<5;i++)
+        scanf("%d",&num[i]);
+    printf("Enter Searching Element:");
+    scanf("%d",&se);
+
+    for(i=0;i<5;i++)
+    {
+        if(se==num[i])
+        {
+           printf("\nPosition of %d is %d",se,i+1);
+           f=1;
+        }
+    }
+    if(f==0)
+     printf("%d element is not found..",se);
+
+
+  return 0;
+}
+Binary Search
+================
+It is name of searching algorithm.
+It is applicable with sorted array.
+It is faster technique of searching.
+Binary search always start with middle element.
+Searching ends with middle element.
+Comparision is less than linear search.
+
+           0   1   2   3   4   5   6   7    8   9
+  num[10]={11, 22, 30, 40, 55, 66, 77, 99, 110,123};
+  se=30
+   si=0
+   ui=9
+   mid= (int)si+ui/2 =>  (int)4.5 =>4
+   Searching element compares with mid element.
+   searching element is less than mid element so searching is going on left part of
+   middle element.
+   si=0
+   ui=mid-1=>3
+   se=30
+   mid= (int)0+3/2=>(int)1.5=>1
+   serching element is greater than mid element so searching is going on
+   right part of mid element.
+   si=mid+1=>2
+   ui=…
+0   1   2   3   4   5   6   7    8   9
+  num[10]={11, 22, 30, 40, 55, 66, 77, 99, 110,123};
+  
+    1 se=30
+    2 se=40
+    3 se=99
+    4 se=123
+    5 se=11
+    6 se=66
+    7 se=10
+    8 se=55
+A collection of C puzzles and solutions. The puzzles are short exercises that stress the common building blocks that go into larger programs. 
+Their purpose is to supplement a C textbook and to provide a way to review what you already know. 
+Web Link: https://chortle.ccsu.edu/CPuzzles/CpuzzlesMain.html
+These pages are not enough, in themselves, to teach the language.
+-Puzzles related to Loops -40 questions with solution
+-Puzzles related to Random Numbers -15 questions with solution
+-Puzzle related to 1d Array - 50 questions with solution
+-Puzzle related to 2d Array -20 questions with solution
+-Puzzle related to Scope and linkage -40 questions with solution
+-Puzzle related to Pointer- 30 questions with solution
+-Puzzle related to Structs- 30 questions with solution
+-Puzzle related to strings- 20 questions with solution
+
+//Binary Search program
+#include <stdio.h>
+int main()
+{
+   int i,low,high, mid,sele, num[5];
+
+    printf("Enter 5 integers");
+    for(i=0;i<5;i++)
+      scanf("%d",&num[i]);
+    printf("Enter searching element:");
+       scanf("%d",&sele);
+     low=0;
+     high=4;
+     mid=(low+high)/2;
+      while(low<=high)
+        {
+            if(num[mid]<sele)
+              low=mid+1;
+            else if(num[mid]==sele)
+             {
+                printf("%d found at location %d", sele, mid+1);
+                break;
+             }
+            else
+                high=mid-1;
+         mid=(low+high)/2;
+        }
+    if(low>high)
+        printf("Not found! %d isn't present in the list.", sele);
+  return 0;
+}
+convert to function based prog.  void bsearch(int[],int)
+#include<stdio.h>
+   void lsearch(int[],int);
+   int main()
+    {
+      int num[5],i,sele;
+      printf("Enter 5 elements:");
+      for(i=0;i<5;i++)
+         scanf("%d",&num[i]);
+      printf("Enter searching element:");
+       scanf("%d",&sele);
+      lsearch(num,sele);
+      return 0;
+    }
+   void lsearch(int n[],int sele)
+    {
+       int i,f=0;
+       for(i=0;i<5;i++)
+        {
+           if(n[i]==sele)
+             {
+              printf("position of %d is %d",sele,i+1);
+             f=1;
+              }
+        }
+       if(f==0)
+          printf("Element is not found..");
+
+    }
+Assignment of function
+====================
+Q1 program to print upper triangle of 3 X 3 matrix using function.
+  void showut(int [][3])
+Q2. program to print lower triangle of 3 X 3 matrix using function.
+  void showlt(int [][3])
+Q3. program to print second diagonal of 3 X 3 matrix using function.
+   void sdiagonal(int [][3])
+Q4. program to print sum of diagonal in 3 X 3 matrix using function.
+    int sumdiagonal(int [][3])
+Q5. program to print transpose of 3 X 3 matrix using function.
+     void transpose(int [][3])
+Q6. program to find largest element in 2 X 2 matrix using function.
+     void matlargest(int [][2])
+Q7. program to find lowest element in 3 X 2 matrix using function.
+     void matsmall(int [][2])
+Q8. program to print first and second diagonal of …
+#include<stdio.h>
+//this program is used to print 10 to 1 series
+void show(int);    //prototype
+int main()
+{
+  show(10);
+  return 0;
+}
+void show(int n)    //function definition
+{
+
+    if(n==0)
+      return;
+    else
+      {
+         printf("%d ",n);
+         show(n-1);        //recursive call
+      }
+}
+Recursive Function  [5 June 2020]
+===================
+Q1. program to print even numbers between 1 to 50 using recursive function.
+Q2. program to print odd numbers between 1 to 50 using recursive function.
+Q3. program to print string in reverse using recursive function.
+       revstr(char[],int)
+#include<stdio.h>
+void revstr(char[],int);
+int main()
+{
+    char str[50];
+    int i;
+    printf("Enter String to print reverse:");
+    gets(str);
+    for(i=0;str[i];i++);
+    revstr(str,i);
+    return 0;
+}
+void revstr(char s[],int i)
+{
+     if(i==-1)
+       return;
+     else
+     {
+        printf("%c",s[i]);
+        revstr(s,i-1);
+     }
+}
+Q4. program to print reverse of the number using recursive function.
+Q5. program to print sum of digits using recursive function.
+…
+#include<stdio.h>
+//acronym program in c
+int main()
+{
+    char str[50];
+    int i;
+    printf("Enter String to print acronym:");
+    gets(str);
+    printf("Acronym of string is: ");
+    printf("%c",(str[0]>'a'&&str[0]<='z')?str[0]-32:str[0]);
+    for(i=0;str[i];i++)
+    {
+       if(str[i]==' ')
+        printf("%c",(str[i+1]>'a'&&str[i+1]<='z')?str[i+1]-32:str[i+1]);
+    }
+    return 0;
+}
+Enter String: this is c programming  output=>TICP
+convert to recursive
+
+#include<stdio.h>
+int fact(int);
+int main()
+{
+  int f,n;
+  printf("Enter a number to find factorial:");
+  scanf("%d",&n);
+  f=fact(n);
+  printf("Factorial=%d",f);
+  return 0;
+}
+int fact(int n)
+{
+   if(n>=1)
+     return n*fact(n-1);
+   else
+    return 1;
+}
+#include<stdio.h>
+long int calpower(int n1,int n2)
+{
+    long int result=1;
+    if(n2 == 0)
+      return result;
+    result=n1*calpower(n1,n2-1);
+}
+int main()
+{
+     int r;
+  r=calpower(5,3);
+  printf("Result=%d",r);
+ return 0;
+}
+int gcdnum(int n1,int n2)
+{
+     while(n1!=n2)
+     {
+          if(n1>n2)
+              return gcdnum(n1-n2,n2);
+          else
+             return gcdnum(n1,n2-n1);
+     }
+     return n1;
+}
+What is Recursion?
+The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called as recursive function.
+Using recursive algorithm, certain problems can be solved quite easily. 
+How memory is allocated to different function calls in recursion?
+Example
+------------
+ void  show(int n)    //function definition
+  {
+     _____
+       show(n+1);     //recursive call
+  }
+
+When any function is called from main(), the memory is allocated to it on the stack.
+A recursive function calls itself,the memory for a called function is allocated on top of memory 
+allocated to calling function and different copy of local variables 
+is created for each function call. When the base case is reached,
+the function ret…
+#include<stdio.h>
+void rec(int);
+int main()
+{
+  rec(1);
+  return 0;
+}
+void rec(int n)
+{
+    printf("%d ", n);
+    if(n<3)
+    {
+        rec(n+1);
+    }
+    printf("%d ", n);
+}
+include<stdio.h>
+int fibonaci(int);   //prototype
+int main()
+{
+   int n, m= 0, i;
+   printf("Enter Total terms:");
+   scanf("%d", &n);
+   printf("Fibonacci series terms are:\n");
+   for(i=1;i<=n;i++)
+   {
+     printf("%d ", fibonacci(m));  //function call
+     m++;
+   }
+  return 0;
+}
+int fibonacci(int n)  //function definition
+{
+   if(n==0||n==1)
+    return n;
+   else
+    return(fibonacci(n-1) + fibonacci(n-2));  //recursive call
+}
+
+
+--
+Userdefined Data Type
+========================
+
+  int float char double =>predefined data type or
+ Primitive data type.
+
+   char sec;
+   int roll
+   float marks;
+   char name[30];
+   long int mobile; 
+Structure and union makes userdefined data type.
+Structure makes user defined data type with the help
+ of predefined data type.
+struct keyword is used in declaration.
+The variable is used inside struct declaration :struct member
+sytax
+----------
+    struct userdefineddatatypename
+    {
+        var1;      //structure member
+        var2;
+        var3;
+        var4;
+    };
+
+example: Design student datatype
+--------------
+  student=> roll, name, marks
+
+  struct student
+  {
+      int roll;
+      char name[30];
+      float marks;
+  }; 
+
+Structure variable declaratio…
+Recursion homework
+========================
+Q1. print array elements using recursive function
+   num[10]={11,22,33,44,55,66,77,88,99,10}
+   void parr(int[],int)
+Q2. print even elements using recursive function
+    num[10]={11,20,30,44,55,69,70,88,99,10}
+   void evarr(int[],int)
+Q3. print all odd numbers between two limits use recursive function.
+   void oseries(int,int)
+Q4. print all vowel part of string using recursive function.
+    void pvowel(char[],int)
+Q5. print all consequitive element of an array use recursive function.
+    num[10]={11,20,21,44,55,56,77,88,99,10}
+   void conseq(int[],int)
+   output: 20 21 55 56
+Q6. print string in following format using recursive function.
+    void pstring(char[],int)
+   Enter Name:trident
+   output:TrIdEnT
+Q7. print …
+#include<stdio.h>
+//Remove repeated characters in the string
+void remrept(char[],int);
+int main()
+{
+   char str[50];
+   printf("Enter String :");
+   gets(str);
+   remrept(str,0);
+   return 0;
+}
+void remrept(char st[],int i)
+{
+   if(st[i]=='\0')
+    return;
+    else
+    {
+
+      if(st[i]==st[i+1])
+        printf("%c\b",st[i]);
+      else
+         printf("%c",st[i]);
+       remrept(st,i+1);
+    }
+}
+struct dist
+  {
+     int km,mtr;
+  };
+ int main()
+  {
+    struct dist sl1,sl2,tot;
+    printf("Distance covered in first slot:");
+    scanf("%d%d", &sl1.km,&sl1.mtr);
+    printf("Distance covered in second slot:");
+    scanf("%d%d", &sl2.km,&sl2.mtr);
+    tot.km=sl1.km+sl2.km+(sl1.mtr+sl2.mtr)/1000;
+    tot.mtr=(sl1.mtr+sl2.mtr)%1000;
+    printf("Total Distance=%d Km %d m",tot.km,tot.mtr);
+    return 0;
+  }
+struct stud
+  {
+       int roll;
+       char name[30];
+  };
+ int main()
+  {
+    struct stud s[5]={10,"Akash",13,"Sagar",15 ,"Tanya",18,"Dev",20,"Tunisha"};
+   printf("%s",s[0].name);
+   printf("%s %d",s[3].name,s[3].roll);
+   printf("%d %s",s[2].roll,s[2].name);
+   printf("%s",s[1].name);
+
+    return 0;
+  }
+Structure
+-----------------
+ struct
+ structure member=> roll,name
+ structure variable=> s
+ array of structure=> if structure variable is declared with array(st[5]) 
+ size of structure variable=>(4+30)=34 bytes
+ userdefined data type=> struct student
+ Structure member=>disimilar data type
+struct student
+{
+   int roll;
+   char name[30];
+};
+int main()
+{
+  struct student st[4],s; //st is array of structure,s is structure var.
+     st[0]=>roll,name  //st[0].roll, st[0].name access structure member
+     st[1]=>roll,name  //st[0].roll, st[0].name
+     st[2]=>roll,name  //st[0].roll, st[0].name
+     st[3]=>roll,name  //st[0].roll, st[0].name
+     s=> roll,name    // s.roll, s.name
+  return 0;
+}
+
+Design data type for complex number
+-----------------------------------…
+Structure Homework[16June2020]
+----------------------------------
+Q1. find sum of two time slots
+    Enter time slot1: 1 30 20   //1hr 30min 20sec
+    Enter time slot2: 2 40 35   //2hr 40min 35sec
+
+Q2. find sum of two distances
+     Enter distance covered before lunch[Km Mtr cm]: 5 760 45
+     Enter distance covered after lunch[Km Mtr cm]: 4 800 75
+Q3. find total weight of two Bikes
+     Enter weight of first Bike[Kg Gm]: 154 400
+     Enter weight of second Bike[Kg Gm]:127 900
+Q4. Find addition result of two complex numbers.
+Q5. Find subtraction result of two complex numbers.
+Q6. store following in structure variable and print 
+     struct student s={"Ramesh",10,8.5f,9.5f,8.0f};
+     output:
+      Name: Ramesh
+      Roll:10
+      Average Marks: 8.66
+Q7. stor…
+#include<stdio.h>
+#include<stdlib.h>
+ struct stud
+  {
+       int roll;
+       char sec;
+       char name[30];
+  };
+
+  int main()
+   {
+     struct stud s[2];
+      int i;
+
+     for(i=0;i<2;i++)
+     {
+         printf("Enter roll name and sec for student %d:",i+1);
+         scanf("%d",&s[i].roll);
+         fflush(stdin);
+         gets(s[i].name);       //unformated function
+         fflush(stdin);
+         s[i].sec=getchar();    //unformated function
+     }
+     for(i=0;i<2;i++)
+        printf("\n%d %s %c",s[i].roll,s[i].name,s[i].sec);
+     return 0;
+   }
+#include<stdio.h>
+ struct stud
+ {
+   int roll; char name[30]; 
+ };
+ void show(struct stud ); // function is going to pass structure
+int main()
+ {
+     struct stud s={11,"yash"};
+      show(s);   //function call
+     return 0;
+ }
+void show(struct stud st)   //function definition
+{
+    printf("Roll=%d",st.roll);
+    printf("\nName =%s",st.name);
+}
+#include<stdio.h>
+ struct stud
+ {
+   int roll; char name[30];
+ };
+ void show(struct stud[] ); // function is going to pass array of structure
+int main()
+ {
+     struct stud s[2]={11,"yash",12,"sagar"};
+      show(s);   //function call
+     return 0;
+ }
+void show(struct stud st[2])   //function definition
+{
+   int i;
+   for(i=0;i<2;i++){
+    printf("Roll=%d",st[i].roll);
+    printf("\nName =%s",st[i].name);
+   }
+}
+Array of structure
+======================
+Size of array of structure variable.  
+struct stud
+  {
+     int roll;        //4
+     char name[30];   //30
+  };
+ int main()
+  {
+     struct stud s, st[5];
+       s=> 34 bytes
+       st=> 34 X 5=> 170bytes
+     return 0;
+  }
+Runtime input for array of structure
+--------------------------------------
+Predefined function is used to take input for array of structure
+variable.
+scanf(), gets(),getchar() is used to take input.
+
+  struct stud
+  {
+       int roll;     =>scanf()
+       char sec;      =>getchar(),scanf(),getche()
+       char name[30]; => scanf(),gets()
+  };
+
+  int main()
+   {
+     struct stud s;
+     printf("Enter roll name and sec:");
+     scanf("%d",&s.roll);
+     gets(s.name);       //unformated function
+  …
+#include<stdio.h>
+struct comp
+{
+   int real,img;
+};
+void addcomplex(struct comp,struct comp);
+int main()
+{
+   struct comp c1={10,5};
+   struct comp c2={4,11};
+    addcomplex(c1,c2);
+  return 0;
+}
+void addcomplex(       ) 
+{
+
+}
+#include<stdio.h>
+struct comp
+{
+   int real,img;
+};
+struct comp addcomplex(struct comp,struct comp);  //prototype
+int main()
+{
+   struct comp c1={10,5};
+   struct comp c2={4,11};
+   struct comp r;
+    r=addcomplex(c1,c2);         //function call
+   printf("%d + %di",r.real,r.img);
+  return 0;
+}
+struct comp addcomplex(struct comp c1,struct comp c2) //function definition 
+{
+
+}
+#include<stdio.h>
+    #include<string.h>
+    union stud
+    {
+       int roll;
+       char name[20];
+    };
+   int main()
+    {
+       union stud s;
+        s.roll=10;
+        printf("Roll=%d",s.roll);
+        strcpy(s.name,"trident");
+        printf("Name =%s",s.name);
+       return 0;
+    }
+struct student
+     {
+        char name[20];
+        int roll;
+         struct dob
+          {
+            int day,month,year;
+          }d;
+      };
+struct student s={"Dev",11,25,3,2001};
+int i;
+    for(i=1;i<=10;i++)
+    {
+        if(i%2==0)
+          continue;
+       printf("%d",i);
+    }
+jump statement
+--------------------
+break: it terminates the execution.
+
+continue: it is kind of jump statement.
+if continue is encountered then loop will continue with next iteration.
+goto 
+
+    int i;
+    for(i=1;i<=10;i++)
+    {
+        if(i%2==0)
+          continue;
+       printf("%d",i);
+    }
+Homework[20june2020]
+===============
+Q1. program to find sum of two complex number using function.
+    void sumcomplex(struct comp,struct comp);
+Q2. program to find substraction of two complex number using function.
+    void subcomplex(struct comp,struct comp);
+Q3. program to find sum of two distance using function.
+     struct dist sumtwo(struct dist,struct dist);
+Q4. program to find sum of two timeslots using function.
+     struct time sumslots(struct time,struct time);
+Q5. program to design datatype using nested structure.
+     student
+         -name
+         -roll
+         -mobile
+         -address
+             -city
+             -pin
+             -state
+    struct student s={"Ramesh",10,98989,"BBSR",751021,"Odisha"};
+Q6. program to store following data …
+#include<stdio.h>
+int main()
+{
+   int i;
+   for(i=1;1;i++)
+    {
+       printf("%d ",i);
+        if(i==10)
+          break;
+    }
+   return 0;
+}
+#include<stdio.h>
+int i=1;
+int main()
+{
+   printf("%d ",i);
+      i++;
+        if(i==11)
+          return;
+   main();          //recursive call
+   return 0;
+}
+#include<stdio.h>
+int i=0;
+int main()
+{
+     i++;
+    printf("%d ",i);
+    if(i==10)
+      return;
+    main();          //recursive call
+   return 0;
+}
+#include<stdio.h>
+int main()
+{
+   int i,s=0;
+    for(i=1;i<=10;i++)
+     {
+        s=s+i;
+        if(i==5)
+         goto add;
+     }
+     add:
+      printf("sum=%d",s);
+    return 0;
+
+}
+#include<stdio.h>
+int main()
+{
+   int i,s=0,s1=0;
+    for(i=1;i<=10;i++)
+     {
+
+        if(i<=5)
+          s=s+i;
+        if(i>5&&i<=10)
+            s1=s1+i;
+        if(i==10)
+         goto add;
+     }
+     add:
+      printf("sum=%d sum=%d",s,s1);
+    return 0;
+
+}
+break
+-----------
+It is keyword in c. It is type of jump statement.
+It is used to break the block execution.
+It is used inside switch case statement.
+break is also used to terminate execution of infinite loop.
+  
+printing 1 to 10 using infinite loop. 
+  int i;
+   for(i=1;1;i++)
+    {
+       printf("%d ",i);
+        if(i==10)
+          break;
+    }
+
+goto
+----------------
+The goto statement is rarely used because
+ it makes program confusing, less readable and complex.
+ Also, when this is used, the control of the program won’t be
+ easy to trace, hence it makes testing and debugging difficult.
+goto is unconditional jump statement.
+When a goto statement is encountered in a C program,
+ the control jumps directly to the label mentioned in the goto stateemnt
+
+goto l…
+C Assignment[23June2020]
+========================
+Q1. program to print all odd numbers between 1 to 50 using continue statement.
+Q2. program to print all even numbers between 11 to 50 using continue statement.
+Q3. program to print your name 10 times using recursive main() function.
+Q4. program to print each letter of your name in separate line using recursive main().
+Q5. program to print each letter of your name in capital letter using recursive main.
+Q6. program to check even and odd using goto statement.
+Q7. program to print table of 7 using infinite loop.
+Q8. program to sort list of integer element in ascending order[take user input].
+    #include<stdio.h>
+int main()
+{
+  int i,j, num[5]={20, 15, 17, 14, 10}, n=5;
+   for(i=1;i<n;i++)   //pass
+   {
+      fo…
+#include<stdio.h>
+int main()
+{
+   int num[5]={55,44,33,22,11},i,j,sm=0;
+   for(i=0;i<4;i++)   //pass
+   {
+        sm=i;
+       for(j=i;j<5;j++)    //find the index of smallest element
+         {
+            if(num[j]<num[sm])
+              sm=j;
+         }
+         num[i]=(num[i]+num[sm])-(num[sm]=num[i]);     //swapping
+   }
+   printf("Sorted list\n");        //printing sorted array
+   for(i=0;i<5;i++)
+     printf("%d ",num[i]);
+
+ return 0;
+}
+print all odd numbers between 1 to 50
+for(i=1;i<=50;i++)
+  {
+       if(i%2==0)
+         continue;
+      printf("%d ",i);
+  }
+
+Selection sort
+===============
+It is name of sorting algorithm.
+It is used arrage elements in ascending or 
+descending order.
+In this algorithm, first find the index of smallest
+element and replace with first element.
+
+example
+-------------------
+ 0  1  2  3  4  5
+ 60 78 55 40 11 30
+ step 1 find index of smallest element. 
+  index of smallest element is 4 than swap element of 4 with index 0
+ 0  1  2  3  4  5 
+11  78 55 40 60 30
+ step 2 again find index of smallest element [1-5].
+  index of smallest element is 5 than swap element of 5th position to 1st position
+0  1   2  3  4  5
+11 30 55 40 60 78
+step 3 again find index of smallest ele…
+Homework[25june2020]
+Q1. program to sort list of integer in descending order using selection sort.
+Q2. program to sort list of float in descending order using selection sort.
+Q3. program to sort list of integer in ascending order using selection sort.
+Q4. program to sort list of char in ascending order using selection sort.
+Q5. program to sort list of char in descending order using selection sort.
+Q6. sort following list using bubble sort step by step algorithm.
+    a) 100,90,70,80,50,40
+    b) 200,100,70,60,50
+    c) C B F E A
+#include<stdio.h>
+main()
+{
+   int arr[5]={15 ,10, 13, 9, 3};
+    int i, ikey, j,n=5,k;
+    for (i=1;i<n;i++)
+    {
+       ikey=arr[i];
+        j=i-1;
+        while (j>=0&&arr[j]>ikey)
+        {
+            arr[j+1]=arr[j];
+            j=j-1;
+        }
+        arr[j+1]=ikey;
+      }
+  printf("sorted Array\n");
+   for(i=0;i<n;i++)
+     printf(" %d ",arr[k]);
+
+}
+0  1  2  3  4
+int i, num[5]={11,33,5,60,10};
+int greater=num[0];
+for(i=1;i<5;i++)
+ {
+     if(num[i]>greater)
+      greater=num[i];
+ }
+printf("Greatest value=%d",greater);
+
+greater=>11 33 60
+i=>1 2 3 4
+greatest value=60
+Insertion Sort
+---------------
+It is name of sorting algorithm. 
+It sorts list of elements in ascending or descending order.
+Sort the elements according to pass.
+If number of elements are 6 then 5 pass to sort.
+List is divided in to two parts
+  1 sorted list
+  2 unsorted list
+Take an element from unsorted list and insert to sorted list.
+
+example
+-------------
+15 10 13 19 3 [unordered list]
+
+pass1
+ SL   UL
+ 15 | 10 13 19 3  take 10 from unsorted list(UL) and insert to SL
+pass 2
+ SL     UL 
+10 15 | 13 19 3  take 13 from UL and insert to SL
+first…
+Homework[27june2020]
+=====================
+Q1 sort all letters of your name using insertion sort
+   char name[]={'s','a','g','a','r'};
+Q2 sort all letters  in descending order.
+   char str[]={'D','a','t','a','s','t','r','u','c','t','u','r','e'};
+Q3. sort all float numbers using selection sort.
+    float marks[]={8.5f,6.9f,9.5f,5.5f,10.0f};
+Q4. sort all integers in descending order using Bubble sort.
+     int num[]={-5,6,7,-1,0,10,9,4,2,1};
+Q5. write step by step algorithm to sort
+    a) D A T A S T R U C T U R E   =>Insertion sort(Ascending)
+    b) e x a m i n a t i o n   => Bubble sort (Descending)
+    c) R a m e s h  => selection sort(Ascending)
+    d) r s c d a v f g l o e  => merge sort(Ascending)
+Pointer
+-----------------
+ It is type of variable.
+ It operates value according to address.
+ Pointer is denoted by * symbol. * means value at address.
+ Size of any pointer variable is 2 [16bit compiler]or 4[above 16bit compiler] bytes.
+  
+ Syntax
+----------
+  datatype * variablename;
+
+  int p;  //integer variable
+          //It holds integer value
+ 
+ int *pt; // integer pointer variable 
+          //It holds address of any integer variable
+
+Address of any variable is denoted by & symbol.
+    int n;
+     printf("%d", &n);  // print address of n variable
+     printf("%d", n);   //print value of n variable
+
+pointer variable is used in dynamic memory allocation.
+ 
+
+    int *pt;         //integer pointer =>holds address of integer var
+    float *m;        //float…
+Homework[29June2020]
+Q1. write quick sort algorithm to sort
+ a) 10 20 8 9 6 30 90 2
+ b) 2.5 5.9 3.0 6.0 1.0 3.4 7.0
+ c) t h e q u i c k b r o w n
+Q2.print following value using pointer
+   a) int n=100, *p;
+   b) float num=50.0f ,*f;
+   c) char grade='E', *ch;
+   d) double nm=10.5, *dv;
+Q3.operate value of variable using pointer.
+  #include<stdio.h>
+  int main()
+   {
+      int n=10, *p;
+      p=&n;
+      *p=*p+10;  //add 10 to variable n
+      printf("n=%d ",n);  //10
+      printf("%d", *p);   //10
+      return 0;
+   }  
+ a) int n=25, *p; //pointer is used to divide n by 5
+ b) float m=30.0f, *pt; //pointer is used to multiply m by 2
+ c) char ch='a', *ch; //pointer is used to convert ch in capital
+ d) int n=10, *p; //pointer is used to add 5 and multiply 20 to n.
+pointer
+--------------------
+type of variable. It access value indirectly.
+* symbol is used in variable declaration.
+It operates value using address.
+Pointer generally used in Dynamic Memory allocation[DMA].
+Dynamic Memory allocation means memory is given during run time.
+Memory address is stored by pointer.
+
+   example
+  -----------
+     int *p;
+     int n=10;    printf("%d",n); //n is accessed using name
+      p=&n;  //p is assigned address of n
+      printf("%d", *p);  //value is accessed using address
+     or
+     int *p=&n;  // n must be defined earlier.
+
+     Rule of pointer assignment
+--------------------------------
+   - single pointer points one variable.
+   - multiple pointer can points single variable.
+   - array name is default pointer. Array nam…
+Homework[2July2020]
+----------------------
+1. int num[8]={11,22,33,44,55,66,77,88}, *p;
+   a) print first and last element using pointer
+   b) find sum of first three element using pointer
+   c) print 55 and 88 using pointer
+   d) print  sum of last two element using pointer
+   e) find value of *(num+1) and *num+1
+   f) find sum of all odd elements using pointer
+   g) find sum of all even elements using pointer
+2. char name[20]="welcome";
+   a) print w using pointer
+   b) print all e using pointer
+   c) print first and last letter in capital using pointer
+   d) print all letters in separate line using pointer
+   e) print string in reverse using pointer
+   f) print all vowels using pointer
+   g) print vowels and consonent separately using pointer.
+ 3. find th…
+pointer with function
+=======================
+ User defined function is used to pass pointer variable.
+It is also called pass by address or call by address[parameter passing].
+Function declaration always use astrik symbol.
+   void show(int *);   //show function is going to pass integer pointer
+   void show(int ,int*)/ //show function is going to pass one integer and one integer pointer.
+
+Function call statement is always pass address of the variable.
+   int n=10;
+   show(&n);     //passing address or function  call by address
+Function defintion is always recieve value in pointer.
+Data Type must be same.
+
+example
+-----------
+#include<stdio.h>
+void show(int *);   //prototype
+int main()
+{
+  int n=10;
+  show(&n);      //function call by address
+  printf("%d",n);…
+Homework[3july2020]
+------------------------
+Q1. program to print integer and float using pointer.
+    void showd(int *,float *);
+Q2. program to find sum of int and float using pointer.
+    void sumd(int ,float *,float); //num1,num2,res
+Q3. program to modify array contents using function and print
+    result in main.
+    void modarr(int[]);   //each elements is modify by +5
+Q4. program to swap two float using pointer.
+    void swapf(float*,float*);
+Q5. program to find maximum number in two numbers
+    void max(int*,int*);
+Q6.program to allocate,store and print.
+    a) int *ptr; //allocate for 5 int and display
+    b) char *p;  //allocate for 5 vowel and display
+    c) float *pt; //allocate for 7 marks and display
+    d) int *arr;//allocate for 10 int element…
+q2 sumd(int*,float*,float*)
+#include<stdio.h>
+int main()
+{
+   int n,i;
+   char *name;
+   printf("Enter size of string:");
+   scanf("%d",&n);
+    name=(char *)malloc(n*sizeof(char));
+    printf("Enter name");
+         scanf("%s",name);
+    printf("You have entered %s",name);
+    return 0;
+}
+Memory Allocation
+------------------------
+   int *s;
+        s=(int *)malloc(4*sizeof(int))
+     
+    1000  1004  1008  1012
+ s=>1000   keep starting address 
+    printf("%d",s);  //1000
+    printf("%d",sizeof(s));  //4 bytes
+    printf("%d",*s);  //garbage value
+
+  Initialization of value to list of pointer.
+   printf("Enter first value");
+    scanf("%d",s);
+   printf("Enter second value");
+   scanf("%d",s+1);
+   printf("Enter third value");
+   scanf("%d",s+2);
+   printf("Enter fourth value");
+   scanf("%d",s+3);
+
+    printf("%d%d%d%d", s,(s+1),(s+2),(s+3));
+
+    *s=> value at 1000
+    *(s+1)=> value at 1004
+    *(s+2)=> value at 1008
+    *(s+3)=> value at 1012
+
+  Input using Loop
+------------------
+   int *s,i;
+    s=(int *)malloc(4*sizeof(int))
+   printf…
+Homework[8July2020]
+---------------------
+Q1. program to find the greatest number using pointer.
+    int num[10]={11,4,3,8,9,12,18,7,6,5},*p;
+Q2. program to find the smallest number using pointer.
+    int num[10]={11,4,3,8,9,12,18,7,6,5},*p;
+Q3. program to print all vowels using pointer.
+    char str[20]="Examination",*s;
+Q4. program to print all even element of array using pointer.
+        int num[10]={11,4,3,8,9,12,18,7,6,5},*p;
+Q5. program to print all odd elements of array using pointer.
+         int num[10]={10,40,3,83,91,12,18,7,6,5},*p;
+Q6. program to print all consonant using pointer.
+     char str[20]="examination", *pt;
+Q7. program to swap to float using pointer.
+     void swap(float *, float *)
+Q8. program to sort elements in ascending order using…
+Homework[8July2020]
+---------------------
+Q1. program to find the greatest number using pointer.
+    int num[10]={11,4,3,8,9,12,18,7,6,5},*p;
+Q2. program to find the smallest number using pointer.
+    int num[10]={11,4,3,8,9,12,18,7,6,5},*p;
+Q3. program to print all vowels using pointer.
+    char str[20]="Examination",*s;
+Q4. program to print all even element of array using pointer.
+        int num[10]={11,4,3,8,9,12,18,7,6,5},*p;
+Q5. program to print all odd elements of array using pointer.
+         int num[10]={10,40,3,83,91,12,18,7,6,5},*p;
+Q6. program to print all consonant using pointer.
+     char str[20]="examination", *pt;
+Q7. program to swap to float using pointer.
+     void swap(float *, float *)
+Q8. program to sort elements in ascending order using…
+Swap(float*,float*)
+
+Structure and pointer
+======================
+->(arrow) operator is used to access structure member using structure pointer.
+struct stud
+{
+    int roll;
+    char name[20]; 
+};
+main()
+{
+    struct stud *p, s={10,"Ramesh"};
+    p=&s;
+    printf("Roll=%d",p->roll);
+    printf("Name=%s", p->name);
+}
+
+passing of structure pointer in function
+----------------------------------------
+Userdefined function is passed structure pointer.
+#include<stdio.h>
+struct stud
+{
+    int roll;
+    char name[20]; 
+};
+void show(struct stud*);   //prototype
+int main()
+{
+       struct stud  s={10,"Ramesh"};
+       show(&s);    //function call
+    return 0;
+}
+void show(struct stud *p)   //definition of the function
+ {
+    printf("Roll=%d",p->roll);
+    printf("Name=%s", p->name);
+}
+ 
+Li…
+Homework[11July2020]
+---------------------
+Q1. program to find sum of two complex number using pointer.
+Q2. program to find substraction of two complex number using pointer.
+Q3. program to find sum of two distances using pointer
+Q4. program to find sum of two time slots using pointer.
+Q5. program to print name,roll,address and mobno using pointer and function.
+    void show(struct stud *);
+Q6. program to find sum of two complex number using function and pointer.
+     void sum(struct comp *, struct comp *)
+Q7.program to store following numbers in single linked list and print.
+   a) 10 20 30 40
+   b) 4.5 5.6 9.7 8.9
+Q8. program to store[roll,name] in single linked list and print.
+    10 Dev
+    15 Akash
+    16 Tanya
+    19 Tunisha
+    22 Sagar
+    25 Yash
+Sir bole hai
+Class 7:30 se 8:30 hai
+https://meet.google.com/bej-dfft-qxx?authuser=0
+Sir a gaye hai sab jaldi join kr lo
+#include<stdio.h>
+struct inum
+{
+  int info;
+  float num;
+  struct inum *next;
+}*start;
+int main()
+{
+   struct inum *node;
+   node=(struct inum*)malloc(sizeof(struct inum));
+   start=node;
+   printf("Enter first value for Linked list:");
+    scanf("%d",&node->info);
+   node->next=(struct inum*)malloc(sizeof(struct inum));
+    node=node->next;
+    printf("Enter second value for Linked list:");
+     scanf("%d",&node->info);
+     node->next=(struct inum*)malloc(sizeof(struct inum));
+     node=node->next;
+    printf("Enter third value for Linked list:");
+     scanf("%d",&node->info);
+     node->next=NULL;
+      node=start;
+      while(node!=NULL)
+        {
+           printf("%d ", node->info );
+           node=node->next;
+        }
+   return 0;
+}
+send ksro
+karo
+#include<stdio.h>
+#include<stdlib.h>
+struct inum
+{
+  int info;
+  struct inum *next;
+}*start;
+int main()
+{
+   struct inum *node; char ch='y';
+   node=(struct inum*)malloc(sizeof(struct inum));
+   start=node;
+   while(1)
+   {
+     printf("Enter first value for Linked list:");
+     scanf("%d",&node->info);
+     printf("Do you want to insert more [y/n]:");
+     fflush(stdin);
+     scanf("%c",&ch);
+     if(ch!='y')
+        break;
+     node->next=(struct inum*)malloc(sizeof(struct inum));
+      node=node->next;
+
+   }
+     node->next=NULL;
+      node=start;
+      while(node!=NULL)
+        {
+           printf("%d ", node->info );
+           node=node->next;
+        }
+   return 0;
+}
+Storage Class
+--------------
+Storage class represents the visibility and a location of a variable. 
+It tells from what part of code we can access a variable.
+A storage class is used to describe the following things:
+  -The variable scope.
+  -The location where the variable will be stored.
+  -The initialized value of a variable.
+  -A lifetime of a variable.
+  -Who can access a variable?
+
+Thus a storage class is used to represent the information about a variable.
+
+NOTE: 
+A variable is not only associated with a data type,
+its value but also a storage class.
+
+There are four storage class in C
+--------------------------------------
+auto=>	        It is a default storage class.
+extern=>	It is a global variable.
+static=>	It is a local variable which is capable of …
+Homework[14July2020]
+------------------------------
+Q1. program to store 10 integer in linked list and print sum of numbers
+Q2. program to store 10 integer in linked list and print largest and
+    smallest number.
+Q3. program to store 5 float numbers in linked list and print sum
+Q4. program to store student details of 5 in linked list and print
+     [roll,name,marks]
+Q5. program to store 6 students detail in linked list and
+ print top and low scorer.[roll,name,marks]
+#include<stdio.h>
+struct stud
+{
+  char name[20];
+  int marks;
+  struct stud *next;
+}*start;
+int main()
+{
+    int cn=1,hm,lm,n=1;
+   struct stud *node; char ch='y';
+   node=(struct stud*)malloc(sizeof(struct stud));
+   start=node;
+   while(1)
+   {
+     printf("Enter name and marks:");
+     scanf("%s",node->name);
+     scanf("%d",&node->marks);
+     printf("Do you want to insert more [y/n]:");
+     fflush(stdin);
+     scanf("%c",&ch);
+     if(ch!='y')
+        break;
+     node->next=(struct stud*)malloc(sizeof(struct stud));
+      node=node->next;
+
+   }
+     node->next=NULL;
+     node=start;
+      hm=node->marks;
+      lm=node->marks;
+      while(node!=NULL)
+        {
+           if(node->marks>hm)
+           { hm=node->marks; cn++;}
+           node=node->next;
+…
+There are four types of storage class
+ 1 auto or automatic
+ 2 register
+ 3 static
+ 4 extern
+Storage class is used with variable.
+register:
+---------------
+ It is keyword in c.
+ It is used in variable declaration.
+ register variable is used register memory to store data.
+ register memory is available in mother bord.
+ CPU can directly interact with register memory.
+ Fast access of the variable but limited storage capacity.
+ Life span is within block.
+
+   register int n;  // n stores data in register memory inplace of RAM
+   printf("%d",n);   // Garbage value
+  --------------------  
+    register int n=50;
+   {
+       register int n=-10;
+        printf("%d", n);      //-10
+   }
+     printf("%d",n);          //50
+
+
+3 static
+---------------
+It is also keyword in c…
+enum[enumeration]
+------------------
+An enumeration type (also called enum) is a data type that consists of 
+integral constants.
+To define enums, the enum keyword is used.
+Symbolic constant is created using enum.
+The value of constant is fixed. You can not modify.
+
+  #include<stdio.h>
+  enum{sun=0,mon,tue,wed=8,thrs,fri=-1,sat};
+  int main()
+   {
+      printf("%d %d %d",sun+100,thrs*3,sat);  //100 27 0 
+      return 0;
+   }
+  
+  const int n=10;  //n is integer const
+  const float m=10.0f;   //m is float const
+  const char sec='A';    //sec is char const
+Today 8.30 to9.30am
+Link ni aya h
+Ha
+Sir abhi tak link nahi bheje hai
+https://meet.google.com/byj-hmkp-ufn
+File
+-----------------
+Disk operation is possible using file handling.
+C language provides FILE type structure.
+It is available in stdio.h header file.
+Disk Input/output operation is possible using FILE type structure.
+FILE type structure is work with pointer. It is called file pointer.
+File pointer is communication channel between file and disk.
+File pointer keep the address of disk storage.
+File stores document type of data.
+Data is permanentely stored in disk.
+
+File Operation
+-----------------
+  1. File open or create new
+  2. write 
+  3. read
+  4. append
+  5. close
+ 
+File pointer
+-----------
+    FILE *fp;
+     fp is file pointer. It keeps disk address of file
+There are two types of file.
+   -text file   =>easy to read
+   -binary file =>you cant read dire…
+Homework[18July2020]
+---------------------
+Q1. Program to write contents using fgets() in file[detail.txt]
+    Name: Ramesh
+    Branch: CSE
+    College:Trident
+Q2 program to print above data of file[detail.txt]
+Q3. program to write all vowels in file using fputc() function.[vowel.txt]
+Q4. program to write table of five in to file[five.txt]
+Q5. program to read following contents.
+    The quick brown fox jump over the lazy dog.
+    This is file programming in c.
+    File stores data in disk.
+    a) Read contents using fgetc()
+    b) print contents in Capital letter
+    c) Print contents in small letter.
+    d) print only vowels from file
+    e) print only constant from file
+    f) count characters of file.
+Tomorrow 8-9AM
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+   int ch;
+   system("cls");    //clear black screen
+   printf("\n============================\n");
+     printf("    Menu Driven App\n");
+   printf("============================\n");
+   printf("       1 Open MSpaint\n");
+   printf("       2 Open Calculator\n");
+   printf("       3 Open Notepad\n");
+   printf("       4 Open Wordpad\n");
+   printf("       5 Open Exit\n");
+   printf("=============================\n");
+   printf("Enter Your choice:");
+   scanf("%d",&ch);
+   if(ch==1)
+     system("mspaint.exe");     //call exe file of MSpaint
+   else if(ch==2)
+     system("calc.exe");        //call exe file of calculator
+   else if(ch==3)
+     system("notepad.exe");     //call exe file of notepad
+   else if(ch==4)…
+try small application using C language
+Input is taken 1 to 5
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+   int ch;
+   system("cls");    //clear black screen
+   printf("\n============================\n");
+     printf("    Menu Driven App\n");
+   printf("============================\n");
+   printf("       1 Open MSpaint\n");
+   printf("       2 Open Calculator\n");
+   printf("       3 Open Notepad\n");
+   printf("       4 Open Wordpad\n");
+   printf("       5 Open Exit\n");
+   printf("=============================\n");
+   printf("Enter Your choice:");
+   scanf("%d",&ch);
+   if(ch==1)
+     system("mspaint.exe");     //call exe file of MSpaint
+   else if(ch==2)
+     system("calc.exe");        //call exe file of calculator
+   else if(ch==3)
+     system("notepad.exe");     //call exe file of notepad
+   else if(ch==4)
+ system("write.exe");       //call exe file of wordpad
+   else
+     exit(0);                   //exit from program
+   main();                      //recursive call of main() for menu
+   return 0;
+}
+try small application using C language
+Input is taken 1 to 5
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+  system("cls");
+  printf("Hello\n");
+  system("pause");
+  system("cls");
+  printf("Welcome\n");
+  system("pause");
+  system("cls");
+  printf("Bye..");
+  return 0;
+}
+
+#include<stdio.h>
+#include<time.h>
+main()
+{
+   time_t now;
+   time(&now);
+   printf("Today is : %s\n",ctime(&now));   //print day,date and time
+   
+}
+fgets()
+------------
+It is predefined function to get string from file.
+You can also take input from stdin.
+
+  char str[20];
+  fgets(str,20,stdin);
+  puts(str); 
+
+fgets() is also used to read data from file.
+It is always pass three arguments.
+fgets(string, size, filepointer);
+fgets() function return NULL in case of End of File.
+
+ while( fgets(str, 20, fp) != NULL )
+    {
+        puts(str);
+    }
+
+
+Example: program to print content of file using fgets()
+#include<stdio.h>
+int main()
+{
+  char str[100];
+  FILE *fp=fopen("fdata.txt","r");
+    while(fgets(str, 100, fp)!= NULL )
+    {
+        puts(str);
+    }
+  return 0;
+}
+
+a)
+#include<stdio.h>
+int main()
+{
+  char ch;
+  FILE *fp=fopen("fdata.txt","r");
+    ch=fgetc( fp);
+    while(ch!= EOF )
+    {
+        if(ch>=97&&ch<=122||ch>=65&&ch<=90)
+          fputc(ch,ft);
+        ch=fgetc(fp);
+    }
+    fclose(ft);
+    fclose(fp);
+  return 0;
+}
+Homework[20July2020]
+-------------------------
+Q1. Program to copy contents of one file to other file.
+    Name of newfile and existing file is given by the user.
+Q2. Program to write following contents in file[indata.txt].
+    "This is file programming.
+    It keep document type data.
+    File stores data in disk .
+    Disk io operation is possible using file.
+    Predefined functions are used:
+     1 fopen()
+     2 fclose()
+     3 fgetc()
+     4 fgets()
+     5 fputs()
+     6 fputc()
+    All above function is used with FILE *fp[file pointer]"
+   a) copy numbers in new file [number.txt]
+   b) copy capital letters in new file[calpha.txt]
+   c) copy small letters in new file[salpha.txt]
+   d) copy all symbol in new file[symbol.txt]
+   e) copy all letters,symbol in newfile without space[spaceless.txt]
+Tomorrow 8.00Pm to 9.00PM
+Ohk
+akash code send
+kar
+#include<stdio.h>
+int main()
+{
+  char fname[30];
+   char ch;
+    FILE *fp,*fc,*fs,*fn,*f;
+   printf("Enter filename to read:");
+    gets(fname);
+    fp=fopen(fname,"r");
+    ch=fgetc(fp);     //initialization
+    fc=fopen("capital.txt","w");
+    fs=fopen("small.txt","w");
+    fn=fopen("number.txt","w");
+    f=fopen("symbol.txt","w");
+
+    while(ch!=EOF)    //condition
+    {
+       if(ch>=65&ch<=90)
+         {
+              fputc(ch,fc);
+         }
+         else if(ch>=97&&ch<=120)
+         {
+              fputc(ch,fs);
+         }
+         else if(ch>=48&&ch<=57)
+          {
+              fputc(ch,fn);
+         }
+         else
+         {
+              fputc(ch,f);
+         }
+       ch=fgetc(fp);   //update expression
+    }
+    fclose(fp);fclose(fs);fclose(fc);fclose(f);fclose(fn);
+  return 0;
+}
+#include<stdio.h>
+int main()
+{
+   FILE *fp; int i;
+   char str[100];
+   fp=fopen("strdemo.txt","w");
+   printf("Enter sentance:");
+   gets(str);
+   for(i=0;str[i];i++)
+   {
+      if(str[i]!='.')
+       fputc(str[i],fp);
+       else
+       fputc('\n',fp);
+    }
+    fclose(fp);
+ return 0;
+}
+write record into the file.
+Record is combination of name, roll and email.
+Record is created using structure.
+It is written inside binary file.
+You can not read binary file directly.
+Binary file is written using predefined function.
+
+fwrite() and fread() function is used to write and read operation in file.
+
+syntax of fwrite()
+--------------------
+  fwrite(address of record,sizeof record, number of record, filepointer);
+fread()
+----------
+ This method is used to read record from the file.
+ syntax
+------
+  fread(address of struct var,sizeof struct var,number of rec,filepointer);
+
+example
+----------
+struct stud
+{
+    char name[30];
+    int roll;
+    char email[70];
+};
+int main()
+{
+   FILE *fp;
+   struct stud s1={"Ramesh",10,"ramesh@gmail.com"};
+   struct stud s2={"Suresh",11,"suresh@gmail.com"};
+   fp=fopen("record.txt","w");
+   fwrite(&s1,sizeof(s1),1,fp);
+   fwrite(&s2,sizeof(s2),1,fp);
+   fclose(fp);
+
+   return 0;
+
+}
+     
+program to read record from the file
+------------------------------------
+struct stud
+{
+    char name[30];
+    int roll;
+    char email[70];
+};
+int main()
+{
+   FILE *fp;
+   struct stud s1;
+   fp=fopen("record.txt","r");
+   while(fread(&s1,sizeof(s1),1,fp))
+    {
+    printf("\n%s %d %s",s1.name,s1.roll,s1.email);
+    }
+   fclose(fp);
+
+   return 0;
+
+}
+
+phone book
+ first,last, mobile,city
+ phone.txt
+
+=================================
+    My Phonebook Application
+=================================
+    1 Add Phone number
+    2 View phone number
+    3 Enquiry
+    4 Exit
+==================================
+ Enter your choice:
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+struct phone
+{
+
+};
+void login();
+void menu();
+void addphone();
+void view();
+void enquiry();
+void modify();
+void delete();
+void searchphone();
+void searchnumber();
+void searchcity();
+int main()
+{
+  login();
+  return 0;
+}
+void login()
+{
+   int i;
+   char uname[5]="user", pass[5]="1234",u[5],p[5];
+   printf("\n=========================\n");
+   printf("        PhoneBook\n");
+   printf("===========================\n");
+   printf("     Enter user name: ");
+   gets(u);
+   printf("     Enter Password: ");
+   for(i=0;i<4;i++)
+     {
+         p[i]=getch();
+         printf("*");
+     }
+     p[i]='\0';
+     if(strcmp(uname,u)==0&& strcmp(pass,p)==0)
+        menu();
+       else
+        printf("\nWrong User!");
+}
+void menu()
+{
+  system("cls");  int ch;
+   printf("\n=========================\n");
+   printf("        PhoneBook\n");
+   printf("===========================\n");
+   printf("       1 Add phonenumber\n");
+   printf("       2 View phonenumber\n");
+   printf("       3 Enquiry\n");
+   printf("       4 Add Modify\n");
+   printf("       5 Delete\n");
+   printf("       6 Exit\n");
+   printf("===========================\n");
+   printf("    Enter Your Choice:  ");
+    scanf("%d",&ch);
+   if(ch==1)
+    addphone();
+   else if(ch==2)
+     view();
+   else if(ch==3)
+    enquiry();
+   else if(ch==4)
+    modify();
+   else if(ch==5)
+     delete();
+   else if(ch==6)
+     exit(0);
+  menu();
+}
+void addphone()
+{
+    FILE *fp=fopen("phone.dat","a");
+      printf("I am under construction...");
+      system("pause");
+    fclose(fp);
+    menu();
+}
+void view()
+{
+    FILE *fp=fopen("phone.dat","r");
+      printf("I am under construction...");
+      system("pause");
+    fclose(fp);
+    menu();
+
+}
+void enquiry()
+{
+  system("cls");  int ch;
+   printf("\n=========================\n");
+   printf("        PhoneBook|Enquiry\n");
+   printf("===========================\n");
+   printf("       1 Search by phonenumber\n");
+   printf("       2 Search by Name\n");
+   printf("       3 Search by City\n");
+   printf("       4 Goto Menu\n");
+   printf("===========================\n");
+   printf("    Enter Your Choice:  ");
+    scanf("%d",&ch);
+
+   if(ch==1)
+     searchphone();
+   else if(ch==2)
+        searchnumber();
+   else if(ch==3)
+     searchcity();
+   else if(ch==4)
+     menu();
+   else
+     enquiry();
+}
+void delete()
+{
+    printf("I am under construction...");
+    system("pause");
+    menu();
+
+}
+void modify()
+{
+   printf("I am under construction...");
+    system("pause");
+    menu();
+
+}
+void searchcity()
+{
+
+
+}
+void searchnumber()
+{
+
+}
+void searchphone()
+{
+
+}
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+void addphone();
+void viewphone();
+void enquiry();
+struct details
+{
+    char fname[10],lname[10],mobile[11];
+    char city[10];
+}r1,r2;
+int main()
+{
+    int option;char answer;
+
+
+    printf(" \n=================================\n");
+    printf("    My Phonebook Application\n");
+    printf(" =================================\n");
+    printf("  1 Add Phone number\n  2 View phone number\n  3 Enquiry\n  4 Exit\n");
+    scanf("%d",&option);
+    switch(option)
+    {
+    case 1: addphone();
+        break;
+    case 2: viewphone();
+        break;
+    case 3: enquiry();
+        break;
+    case 4: exit(0);
+        break;
+    default:
+        {
+             system("cls");
+            printf("Please print a valid option");
+            main();
+        }
+    }
+}
+void addphone()
+    {
+        FILE *fp=fopen("addphone.txt","a");
+        system("cls");fflush(stdin);
+        printf("Please enter Your first name");
+        scanf("%s",r1.fname);
+        printf("Please enter Your last name");
+        scanf("%s",r1.lname);
+         printf("Please enter Your phone number");
+        scanf("%s",r1.mobile);
+         printf("Please enter Your city name");
+         scanf("%s",r1.city);
+        fwrite(&r1,sizeof(r1),1,fp);
+        fclose(fp);
+        main();
+
+    }
+void viewphone()
+{
+    FILE *fv=fopen("addphone.txt","r"); int userinput;
+    printf("%20s%20s%20s%20s\n","Firstname","Lastname","Mobile","City");
+    printf("==============================================\n");
+    while(fread(&r2,sizeof(r2),1,fv))
+    {
+         printf("%20s%20s%20s%20s\n",r2.fname,r2.lname,r2.mobile,r2.city);
+    }
+     printf("\n\nPRESS 1 to go back and other key to EXIT");
+    scanf("%d",&userinput);
+    if(userinput==1)
+    {
+        system("cls");main();
+    }
+    fclose(fv);
+
+}
+void enquiry()
+{
+
+    char searchname[10];int c=0,userinput;
+    FILE *fv=fopen("addphone.txt","r");
+    printf("TO search ENTER the first name");
+    scanf("%s",searchname);
+   while(fread(&r2,sizeof(r2),1,fv))
+   {
+        if(strcmp(searchname,r2.fname)==0)
+       {
+           printf("\nName:%s %s Mobile:%s City:%s",r2.fname,r2.lname,r2.mobile,r2.city);c=1;
+       }
+    }
+     printf("\n\nPRESS 1 to go back and other key to EXIT");
+    scanf("%d",&userinput);
+    if(userinput==1)
+    {
+        system("cls");main();
+    }
+    fclose(fv);
+
+}
+[8:54 pm, 25/07/2020] Dev Data: Binary files
+=============
+It is type of file which stores data in binary form.
+Predefined functions are used.
+Binary files are mostly the .bin files in your computer.
+Instead of storing data in plain text, they store it in the binary form (0's and 1's).
+They can hold a higher amount of data, are not readable easily,
+and provides better security than text files.
+Mode       Description
+rb       read only
+wb       write mode
+ab       append mode
+rb+      read and write possible
+wb+      write and read possible
+ab+      read and append in binary
+
+putw (): This function is used for writing an integer value to a given file.
+ putw (value,fptr);
+getw (): This function returns the integer value from a given file 
+  and increment the file pointer position to the next message.
+ getw (fptr);
+rewind(filepointer):
+   File pointer points starting of data.
+Example
+----------
+#include<stdio.h>
+main()
+{
+   FILE *fp;
+   int n,num;
+    fp=fopen("c.dat", "wb+");
+      printf("Enter the integer data");
+      scanf("%d",&n);
+      while(n!=0)
+      {
+         scanf("%d",&num);
+         putw(num,fp);
+         n--;
+      }
+      rewind(fp);     //cursor moves to begininng
+      printf("Reading data from file");
+      while((n=getw(fp))!=EOF)
+        {
+              printf("%d\n",n);
+        }
+      fclose(fp);
+}
+[8:55 pm, 25/07/2020] Dev Data: #include <stdio.h>
+#include <stdlib.h>
+struct three
+{
+   int n1, n2, n3;
+};
+int main()
+{
+   int n;
+   struct three num;
+   FILE *fptr;
+   if ((fptr = fopen("program.bin","wb")) == NULL)
+     {
+       printf("Error! opening file");
+       exit(1);
+     }
+   for(n = 1; n < 5; ++n)
+   {
+      num.n1 = n;
+      num.n2 = n*5;
+      num.n3 = n*5+1;
+      fwrite(&num, sizeof(struct three),1,fptr);
+   } 
+    fclose(fptr); 
+   return 0;
+}
+
+
+A(1,2)= A(1-1,A(1,2-1)) =>A(0,A(1,1))
+A(1,1)=A(1-1,A(1,1-1)) => A(0,A(1,0))
+A(1,0)=A(1-1,1)    //apply condition 2
+      =>A(0,1)  //apply condition 1
+ A(0,1) => n+1 =>2
+
+A(1,0)=A(1-1,1)   //apply condition 2
+      =>A(0,1)  =>2
+A(1,1) =A(1-1,A(1,0))  //apply condition 3
+        =>A(0,2)=>3   //apply condition 1
+A(1,2)= A(1-1,A(1,1)) //apply condition 3
+      =>A(0, A(1,1))
+      =>A(0,3) =>3+1=>4 //apply condition 1 
+
+
+
+Ackermann Function
+------------------
+The Ackermann function is the simplest example of a well-defined 
+total function which is computable but not primitive recursive,
+providing a counterexample to the belief in the early 1900’s
+that every computable function was also primitive recursive .
+It grows faster than an exponential function, or even 
+a multiple exponential function.
+example
+-------------
+int acr(int m,int n);
+main()
+{
+  int m,n;
+   printf("Enter two numbers");
+    scanf("%d%d",&m,&n);
+    printf("Result=%d", acr(m,n));
+}
+int acr(int m,int n)
+{
+     if(m==0)
+         return n+1;
+     else if(n==0)
+          return acr(m-1,1);
+     else
+        return acr(m-1,acr(m,n-1));
+}
