@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\.net\my first project\my first project\bin\Debug\net6.0\my first project.exe
+C:\Users\Admin\Desktop\.net\my first project\my first project\bin\Debug\net6.0\my first project.deps.json
+C:\Users\Admin\Desktop\.net\my first project\my first project\bin\Debug\net6.0\my first project.runtimeconfig.json
+C:\Users\Admin\Desktop\.net\my first project\my first project\bin\Debug\net6.0\my first project.dll
+C:\Users\Admin\Desktop\.net\my first project\my first project\bin\Debug\net6.0\ref\my first project.dll
+C:\Users\Admin\Desktop\.net\my first project\my first project\bin\Debug\net6.0\my first project.pdb
+C:\Users\Admin\Desktop\.net\my first project\my first project\obj\Debug\net6.0\my first project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\.net\my first project\my first project\obj\Debug\net6.0\my first project.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\.net\my first project\my first project\obj\Debug\net6.0\my first project.AssemblyInfo.cs
+C:\Users\Admin\Desktop\.net\my first project\my first project\obj\Debug\net6.0\my first project.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\.net\my first project\my first project\obj\Debug\net6.0\my first project.dll
+C:\Users\Admin\Desktop\.net\my first project\my first project\obj\Debug\net6.0\ref\my first project.dll
+C:\Users\Admin\Desktop\.net\my first project\my first project\obj\Debug\net6.0\my first project.pdb
+C:\Users\Admin\Desktop\.net\my first project\my first project\obj\Debug\net6.0\my first project.genruntimeconfig.cache
+C:\Users\Admin\Desktop\.net\my first project\my first project\obj\Debug\net6.0\my first project.csproj.AssemblyReference.cache
